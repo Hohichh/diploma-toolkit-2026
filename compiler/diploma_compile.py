@@ -271,7 +271,7 @@ def docker_run_args(project: Path, output_dir: Path, image: str) -> list[str]:
     ]
     if hasattr(os, "getuid") and hasattr(os, "getgid"):
         args.extend(["--user", f"{os.getuid()}:{os.getgid()}"])
-    args.extend([image, "/workspace", "/out", str(MAIN_TEX), JOB_NAME])
+    args.extend([image, "/workspace", "/out", MAIN_TEX.as_posix(), JOB_NAME])
     return args
 
 
