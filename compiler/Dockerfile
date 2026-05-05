@@ -79,6 +79,7 @@ RUN tlmgr option repository "$TL_REPOSITORY" \
     lastpage \
     lh \
     lineno \
+    listings \
     makecell \
     microtype \
     minted \
@@ -87,6 +88,7 @@ RUN tlmgr option repository "$TL_REPOSITORY" \
     pgfopts \
     setspace \
     siunitx \
+    spverbatim \
     textcase \
     tocloft \
     tools \
